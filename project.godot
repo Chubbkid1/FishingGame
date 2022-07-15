@@ -14,9 +14,14 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Fishing Game"
+config/name="Fishing_Game"
 run/main_scene="res://Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/ItemIcons/icon.png"
+
+[autoload]
+
+PlayerData="*res://Singletons/PlayerData.gd"
+GameData="*res://Singletons/GameData.gd"
 
 [display]
 

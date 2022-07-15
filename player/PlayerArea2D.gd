@@ -15,13 +15,13 @@ func _ready():
 func _process(delta):
 	var velocity = Vector2.ZERO 
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1 
+		velocity.x += 1 * speed
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		velocity.x -= 1 * speed
 	if Input.is_action_pressed("move_down"):
-		velocity.y += 1
+		velocity.y += 1 * speed
 	if Input.is_action_pressed("move_up"):
-		velocity -= 1
+		velocity.y -= 1 * speed
 		
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screen_size.x)
