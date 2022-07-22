@@ -12,18 +12,10 @@ func _ready():
 
 # this function makes our character move, pretty straight forward
 # the "clamp" funciton makes it so that the charachter cannot move outside of the screen.
-func _process(delta):
-	var velocity = Vector2.ZERO 
-	if Input.is_action_pressed("move_right"):
-		velocity.x += 1 * speed
-	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1 * speed
-	if Input.is_action_pressed("move_down"):
-		velocity.y += 1 * speed
-	if Input.is_action_pressed("move_up"):
-		velocity.y -= 1 * speed
-		
-	position += velocity * delta
+#func _process(delta):
+	
+	
 	#position.x = clamp(position.x, 0, screen_size.x)
 	#position.y = clamp(position.y, 0, screen_size.y)
 
+	
