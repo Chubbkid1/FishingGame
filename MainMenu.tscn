@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MainMenu.gd" type="Script" id=1]
+
+[sub_resource type="Theme" id=1]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1913.0
+margin_bottom = 1077.0
+
+[node name="Play" type="Button" parent="."]
+margin_left = 177.0
+margin_top = 467.0
+margin_right = 551.0
+margin_bottom = 729.0
+hint_tooltip = "Play
+"
+theme = SubResource( 1 )
+text = "Play"
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 1207.0
+margin_top = 478.0
+margin_right = 1586.0
+margin_bottom = 742.0
+text = "Exit"
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

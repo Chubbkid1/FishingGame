@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="Label" type="Label"]
+margin_left = 238.0
+margin_top = 68.0
+margin_right = 280.0
+margin_bottom = 86.0
+text = "Fish: 0"
