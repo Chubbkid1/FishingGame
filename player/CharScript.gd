@@ -10,7 +10,7 @@ enum {
 var state = Not_fishing
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$"/root/Global".register_player(self)
 
 
 func _physics_process(delta):
@@ -43,7 +43,10 @@ func _not_fishing(delta):
 		get_tree().change_scene("res://EscapeMenu.tscn")
 	if Input.is_action_pressed("space_bar"):
 		state = Fishing
-		
+	if Input.is_action_pressed("Inventory"):
+		get_tree().change_scene("res://UI/Inventory.tscn")
 	var result = velocity * delta
 	move_and_collide(result)
 	
+func _get_position():
+	return self.global_position.x

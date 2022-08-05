@@ -22,3 +22,11 @@ tile_data = PoolIntArray( -720893, 39, 0, -720892, 39, 0, -655357, 39, 0, -65535
 position = Vector2( 8, 0 )
 
 [node name="Label" parent="." instance=ExtResource( 3 )]
+uppercase = true
+
+[node name="Label2" parent="." instance=ExtResource( 3 )]
+margin_left = 235.0
+margin_top = -28.0
+margin_bottom = -10.0
+text = "To fish press \"spacebar\""
+uppercase = true

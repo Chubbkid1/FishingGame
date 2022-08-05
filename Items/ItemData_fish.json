@@ -1,20 +1,18 @@
 {
-	"1001": 
-	{
-		"Name" : "",
-		"Type" : "",
-		
-	}
-	"1002": 
-	{
-		"Name" : "",
-		"Type" : "",
-		
-	}
-	"1003": 
-	{
-		"Name" : "",
-		"Type" : "",
-		
+	"4001": {
+		"Name": "BasicFish",
+		"Type": "Cod"
+	},
+	"4002": {
+		"Name": "CommonFish",
+		"Type": "Salmon"
+	},
+	"4003": {
+		"Name": "UncommonFish",
+		"Type": "GoldFish"
+	},
+	"4004": {
+		"Name": "LegendaryFish",
+		"type": "HugeGoldFish"
 	}
 }
